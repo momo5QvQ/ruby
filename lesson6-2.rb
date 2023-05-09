@@ -1,12 +1,25 @@
 puts "計算をはじめます"
 puts "何回繰り返しますか？"
-n=gets.to_i
-for n in 1..10 do
-  puts "#{n}回目の計算"
+input=gets.to_i
+i=1
+
+while i <= input do
+  puts "#{i}回目の計算"
   puts "2つの値を入力してください"
-  あ=gets.to_i
-  い=gets.to_i
-  puts "#{あ}"
-  puts "#{い}"
+  a =gets.to_i
+  b =gets.to_i
+  puts "#{a}"
+  puts "#{b}"
   puts "計算結果を出力します"
+  
+  puts "計算結果を出力します"
+  puts "#{a}+#{b}=#{a + b}"
+  puts "#{a}-#{b}=#{a - b}"
+  puts "#{a}*#{b}=#{a * b}"
+  puts "#{a}/#{b}=#{a / b}"
+  
+  i+=1
+  
 end
+
+puts"計算を終了します"
